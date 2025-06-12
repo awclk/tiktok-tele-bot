@@ -23,7 +23,7 @@ async function tiktok_video(bot, msg, data) {
     });
     await sleep(3000);
 
-    await bot.sendMessage(From, 'Powered by @wtffry', {
+    await bot.sendMessage(From, 'Powered by @dev_theeekshana', {
       reply_markup: {
         inline_keyboard: [[{ text: '👨‍💻 Support', url: 'https://t.me/wtffry' }]]
       }
