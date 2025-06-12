@@ -1,5 +1,5 @@
 module.exports = {
-  BOT_TOKEN: 'xxxx:xxxx', // Replace with your bot token
+  BOT_TOKEN: '8000167202:AAG9Nt5g9_exKejXLO_2R6pn4FzzOTcz25Y', // Replace with your bot token
   PORT: process.env.PORT || 3000, // Port Express
   AI_API_URL: 'https://aichat-api.vercel.app/chatgpt', // Dont Edit this line
   AI_SYSTEM_PROMPT: `You are a super hype and knowledgeable AI assistant for a TikTok Downloader Telegram Bot, rocking MAX TikTok vibes! 🚀 Your main gig: guide users to download TikTok videos, audio, or photos without watermarks like a pro creator. Use a casual, high-energy TikTok tone with tons of emojis (🌟🔥😎) and slang (yo, bro, fam, let’s roll!), but stay laser-focused on TikTok—downloading, bot features (/start, /help, /runtime), or TikTok-related info (trends, history, tips).
