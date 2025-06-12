@@ -78,86 +78,84 @@ const getMessage = (lang, type) => {
   const messages = {
     id: {
       start: `
-🌟 Selamat datang di *TikTok Downloader Bot*! 🌟
-Saya akan membantu Anda mengunduh video, audio, atau foto TikTok tanpa watermark. Kirim **Hanya** tautan TikTok yang valid, seperti:
-https://vt.tiktok.com/ZS2qsMU1W/
-Jangan tambahkan teks lain sebelum atau sesudah tautan.
+🌟 Welcome to the *TikTok Downloader Bot*! 🌟  
+I will help you download TikTok videos, audio, or photos without a watermark. Just send a valid TikTok link, such as:  
+https://vt.tiktok.com/ZS2qsMU1W/  
+Do not add any other text before or after the link.
 
-📌 *Cara Mendapatkan Tautan*:
-1. Buka aplikasi TikTok.
-2. Pilih video atau foto.
-3. Ketuk *Bagikan* (panah ke kanan).
-4. Pilih *Salin Tautan*.
-5. Tempel **Hanya** tautan di sini.
+📌 *How to Get the Link*:  
 
-Kirim **Hanya** tautan TikTok sekarang! Atau ketik /help untuk panduan lebih lanjut.
-Pilih bahasa: *id*, *en*, atau *zh*`,
-      help: `
-📚 *Panduan Penggunaan Bot* 📚
-Saya di sini untuk membantu Anda mengunduh konten TikTok. Kirim **Hanya** tautan TikTok tanpa teks tambahan, seperti:
+1. Open the TikTok app.  
+
+2. Select the video or photo.  
+
+3. Tap *Share* (the arrow pointing right).  
+
+4. Choose *Copy Link*.  
+
+5. Paste only the link here.
+
+Send only the TikTok link now! Or type /help for further guidance.`,
+help: `
+📚 Bot Usage Guide 📚
+I'm here to help you download TikTok content. Just send a TikTok link without any extra text, like:
 https://vt.tiktok.com
 
-✨ *Fitur*:
-- Unduh video TikTok tanpa watermark.
-- Unduh audio atau foto/slideshow.
-- Gunakan /runtime untuk cek waktu aktif bot.
+✨ Features:
+⦁ Download TikTok videos without watermark.
+⦁ Download audio or photo/slideshow.
+⦁ Use /runtime to check bot uptime.
 
-📌 *Cara Mengunduh*:
-1. Buka TikTok, pilih video/foto.
-2. Ketuk *Bagikan* > *Salin Tautan*.
-3. Tempel **Hanya** tautan di sini.
+📌 How to Download:
+1. Open TikTok, pick a video/photo.
+2. Tap Share > Copy Link.
+3. Paste only the link here.
 
-💡 *Penting*:
-- Jangan tambahkan teks sebelum/sesudah tautan.
-- Jika ada masalah, saya akan membantu!
+💡 Important:
+⦁ Don’t add any text before/after the link.
+⦁ If there’s an issue, I’ll help you out!
 
-Kirim **Hanya** tautan TikTok sekarang! Atau pilih bahasa: *id*, *en*, atau *zh*`,
-      runtime: '🕒 Bot sudah aktif selama: {hours} jam, {minutes} menit, {seconds} detik.',
-      invalid_url: `
-Maaf, tautan yang Anda kirim bukan tautan TikTok yang valid. Pastikan tautan dari TikTok, seperti:
+Send just a TikTok link now! Or choose a language: id, en, or zh, runtime: '🕒 Bot has been active for: {hours} hours, {minutes} minutes, {seconds} seconds.', invalid_url: 
+Sorry, the link you sent isn’t a valid TikTok link. Make sure it’s from TikTok, like:
 https://vt.tiktok.com
-Kirim **Hanya** tautan tanpa teks tambahan.
+Send only the link without extra text.
 
-📌 *Cara Memperbaiki*:
-1. Buka aplikasi TikTok.
-2. Pilih video/foto, ketuk *Bagikan*.
-3. Salin tautan.
-4. Tempel **Hanya** tautan di sini.
+📌 How to Fix:
+1. Open the TikTok app.
+2. Pick a video/photo, tap Share.
+3. Copy the link.
+4. Paste only the link here.
 
-Kirim **Hanya** tautan TikTok yang valid sekarang!`,
-      strict_link_only: `
-Maaf, Anda **Hanya** boleh mengirim tautan TikTok tanpa teks tambahan, seperti:
+Send a valid TikTok link now!, strict_link_only: 
+Sorry, you can only send TikTok links without extra text, like:
 https://vt.tiktok.com
-Jangan tambahkan teks sebelum atau sesudah tautan.
+Don’t add any text before or after the link.
 
-📌 *Cara Memperbaiki*:
-1. Buka aplikasi TikTok.
-2. Pilih video/foto, ketuk *Bagikan*.
-3. Salin tautan.
-4. Tempel **Hanya** tautan di sini.
+📌 How to Fix:
+1. Open the TikTok app.
+2. Pick a video/photo, tap Share.
+3. Copy the link.
+4. Paste only the link here.
 
-Kirim **Hanya** tautan TikTok sekarang!`,
-      processing: '⏳ Sedang memproses tautan TikTok Anda... Tunggu sebentar, ya!',
-      processing_error: `
-Maaf, ada masalah saat memproses tautan Anda. Mungkin tautan salah atau ada masalah jaringan.
+Send just a TikTok link now!, processing: '⏳ Processing your TikTok link... Please wait a moment!', processing_error: 
+Sorry, there was a problem processing your link. The link might be wrong or there could be a network issue.
 
-📌 *Cara Memperbaiki*:
-1. Pastikan tautan dari TikTok, seperti:
+📌 How to Fix:
+1. Make sure the link is from TikTok, like:
    https://vt.tiktok.com
-2. Salin ulang tautan.
-3. Tempel **Hanya** tautan tanpa teks tambahan.
+2. Copy the link again.
+3. Paste only the link without extra text.
 
-Kirim **Hanya** tautan TikTok sekarang! Atau tanya saya tentang cara mengunduh.`,
-      off_topic: `
-Saya di sini untuk membantu mengunduh video, audio, atau foto TikTok. Kirim **Hanya** tautan TikTok atau tanya tentang fitur bot!
+Send just a TikTok link now! Or ask me how to download., off_topic: 
+I’m here to help download TikTok videos, audio, or photos. Just send a TikTok link or ask about the bot’s features!
 
-📌 *Cara Mulai*:
-1. Buka TikTok, pilih video/foto.
-2. Ketuk *Bagikan* > *Salin Tautan*.
-3. Tempel **Hanya** tautan di sini.
+📌 How to Start:
+1. Open TikTok, pick a video/photo.
+2. Tap Share > Copy Link.
+3. Paste only the link here.
 
-Kirim **Hanya** tautan TikTok sekarang!`,
-    },
+Send just a TikTok link now!`,
+},
     en: {
       start: `
 🌟 Welcome to *TikTok Downloader Bot*! 🌟
